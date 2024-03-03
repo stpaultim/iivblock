@@ -1,0 +1,11 @@
+name = IIV Block
+description = Provides a file field in block configuration form for displaying an image in a block.
+backdrop = 1.x
+type = module
+package = User Interface
+dependencies[] = image
+dependencies[] = system (>=1.14.0)
+
+configure = admin/structure/iivblock/iivblock_configure
+stylesheets[all][] = css/iivblock.css
+scripts[] = iivblock.js
