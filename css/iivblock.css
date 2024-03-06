@@ -84,3 +84,39 @@
 		transform: scale(1);
 	}
 }
+
+.iivblock-inner.visible .swingInTop {
+	opacity: 0;
+	animation: swingInTop 2s ease 0s 1 normal forwards;
+  }
+  @keyframes swingInTop {
+	0% {
+		opacity: 0;
+		transform: rotateX(-100deg);
+		transform-origin: top;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+		transform-origin: top;
+	}
+}
+
+.iivblock-inner.visible .swingInBottom {
+	opacity: 0;
+	animation: swingInBottom 2s ease 0s 1 normal forwards;
+  }
+  @keyframes swingInBottom {
+	0% {
+		opacity: 0;
+		transform: rotateX(100deg);
+		transform-origin: bottom;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0);
+		transform-origin: bottom;
+	}
+}

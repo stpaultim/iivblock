@@ -1,5 +1,5 @@
 name = IIV Block
-description = Provides a file field in block configuration form for displaying an image in a block.
+description = Provides a file field in block configuration form for displaying an image in a block and a text in 2 columns with effect.
 backdrop = 1.x
 type = module
 package = User Interface

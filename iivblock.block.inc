@@ -167,12 +167,11 @@ class BlockIIV extends Block {
       '#disabled' => !empty($this->settings['machine_name']),
     );
 
-    // Simplify title settings as IIV Blocks have no default title.
     $form['title_display']['title_display']['#default_value'] = LAYOUT_TITLE_CUSTOM;
     $form['title_display']['title_display']['#access'] = FALSE;
     $form['title_display']['title']['#default_value'] = $this->settings['title'];
     $form['title_display']['title']['#description'] = t('Leave empty for no block title.');
-    // Add an image.
+    // Image.
     $extensions = 'jpg jpeg png gif svg';
     if (config_get('system.core', 'image_toolkit') == 'gd' && defined('IMAGETYPE_WEBP')) {
       $gd_info = gd_info();
@@ -224,28 +223,7 @@ class BlockIIV extends Block {
         '#default_value' => isset($block['image_style']) ? $block['image_style'] : '',
       );
     }
-    /*
-    $form['extended']['image_align'] = array(
-      '#type' => 'select',
-      '#title' => t('Image appearance'),
-      '#options' => array(
-        'center' => t('Centered'),
-        'none' => t('As is'),
-        'left' => t('Left'),
-        'right' => t('Right'),
-      ),
-      '#description' => t('How to show the image.'),
-      '#default_value' => isset($block['image_align']) ? $block['image_align'] : '',
-    );
-    */
-    // Background images can't have alt, title, link...
-    /*
-    $formitem_states = array(
-      'invisible' => array(
-        ':input[name="extended[image_align]"]' => array('value' => 'parallax'),
-      ),
-    );
-    */
+
     $form['extended']['alt'] = array(
       '#type' => 'textfield',
       '#title' => t('Alternate text'),
@@ -308,6 +286,8 @@ class BlockIIV extends Block {
         'slideInRight' => t('slideInRight'),
         'slideInBottom' => t('slideInBottom'),
         'slideInTop' => t('slideInTop'),
+        'swingInBottom' => t('swingInBottom'),
+        'swingInTop' => t('swingInTop'),
       ),
       '#default_value' => isset($block['image_transition']) ? $block['image_transition'] : '',
     );
@@ -335,6 +315,8 @@ class BlockIIV extends Block {
         'slideInRight' => t('slideInRight'),
         'slideInBottom' => t('slideInBottom'),
         'slideInTop' => t('slideInTop'),
+        'swingInBottom' => t('swingInBottom'),
+        'swingInTop' => t('swingInTop'),
       ),
       '#default_value' => isset($block['content_transition']) ? $block['content_transition'] : '',
     );
