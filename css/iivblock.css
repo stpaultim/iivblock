@@ -2,6 +2,9 @@
   text-align: center;
 }
 
+.iivblock-inner .slideInLeft {
+	opacity: 0;
+}
 .iivblock-inner.visible .slideInLeft {
   opacity: 0;
   animation: SlideInLeft 2s ease 0s 1 normal forwards;
@@ -19,6 +22,9 @@
 	}
 }
 
+.iivblock-inner .slideInRight {
+	opacity: 0;
+}
 .iivblock-inner.visible .slideInRight {
   opacity: 0;
   animation: SlideInRight 2s ease 0s 1 normal forwards;
@@ -36,8 +42,11 @@
 	}
 }
 
+.iivblock-inner .slideInBottom {
+	opacity: 0;
+}
 .iivblock-inner.visible .slideInBottom {
-  opacity: 0;
+	opacity: 0;
   animation: SlideInBottom 2s ease 0s 1 normal forwards;
 }
 @keyframes SlideInBottom {
@@ -53,6 +62,9 @@
 }
 
 
+.iivblock-inner .slideInTop {
+	opacity: 0;
+}
 .iivblock-inner.visible .slideInTop {
   opacity: 0;
   animation: SlideInTop 2s ease 0s 1 normal forwards;
@@ -69,11 +81,14 @@
 	}
 }
 
+.iivblock-inner .fadeIn {
+	opacity: 0;
+}
 .iivblock-inner.visible .fadeIn {
 	opacity: 0;
 	animation: fadeIn 2s ease 0s 1 normal forwards;
-  }
-  @keyframes fadeIn {
+}
+@keyframes fadeIn {
 	0% {
 		opacity: 0;
 		transform: scale(0.6);
@@ -85,6 +100,9 @@
 	}
 }
 
+.iivblock-inner .swingInTop {
+	opacity: 0;
+}
 .iivblock-inner.visible .swingInTop {
 	opacity: 0;
 	animation: swingInTop 2s ease 0s 1 normal forwards;
@@ -103,6 +121,9 @@
 	}
 }
 
+.iivblock-inner .swingInBottom {
+	opacity: 0;
+}
 .iivblock-inner.visible .swingInBottom {
 	opacity: 0;
 	animation: swingInBottom 2s ease 0s 1 normal forwards;
