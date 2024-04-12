@@ -19,7 +19,8 @@ Install this module using the official Backdrop CMS instructions at https://back
 1. Navigate to the layout where you want the IIV Block.
 2. Click to add a block and search for "IIV Block".
 3. Add a file and configure the settings to meet your needs.
-4. To reuse an existing IIV Block on another layout, search for the block. 
+4. WARNING : JUST CONFIGURE IMAGE AND TEXT PARAMETERS AND THEN ADD BLOCK BEFORE COMMING BACK TO MODIFICATION FOR VISIBILITY AND OTHER THINGS
+5. To reuse an existing IIV Block on another layout, search for the block. 
   This will create a separate instance of the block.
 
 ## Dependencies
