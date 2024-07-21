@@ -39,8 +39,8 @@ class BlockIIV extends Block {
       'img_url' => '',
       'wrapper_classes' => 'iivblock-inner ' . $this->settings['machine_name'],
       'image_position' => '',
-      'image_transition' => $this->settings['image_transition'],
-      'content_transition' => $this->settings['content_transition'],
+      'image_transition' => isset($this->settings['image_transition']) ? $this->settings['image_transition'] : 'default_transition', // Default value for image_transition
+      'content_transition' => isset($this->settings['content_transition']) ? $this->settings['content_transition'] : 'default_transition', // Default value for content_transition
       'machine_name' => $this->settings['machine_name'],
     );
 
